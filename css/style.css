@@ -1,0 +1,149 @@
+body {
+    background: #131313;
+    margin: 109px 134px;
+    
+
+}
+@font-face {
+    font-family: 'Yeseva one';
+    src: url('fonst/OFL.YesevaOne') format('txt');
+    text-decoration: none;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    /* font-family: 'Yeseva one'; */
+    box-sizing: border-box;
+    list-style-type: none;
+}
+.header {
+     display: flex; 
+     max-width: 1440px;
+     padding: 0px 20px;
+     margin: 0px auto;
+}
+
+.fixed-container {
+    /* padding: 0px 20px; */
+    margin: 0px auto;
+    max-width: 1171px;
+}
+
+.menu-container {
+    line-height: 19.4px;
+    text-align: left;
+    /* max-width: 623px; */
+    display: flex;
+    padding-left: 490px;
+    justify-content: space-between;
+}
+
+nav ul li {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav ul li a {
+    margin-right: 75px;
+    font-weight: 700;
+    color: #FFFFFF4D;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #E3B873;
+    text-decoration: underline;
+    border-bottom: 2px;
+}
+
+.section-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 45px;
+}
+
+.caption {
+    font-family: 'Yeseva one';
+    color: rgb(227, 184, 115);
+    font-size: 29px;
+    letter-spacing: -0.1em;
+    text-align: left;
+    text-transform: uppercase;
+    padding-top: 5px;
+}
+
+.caption-line {
+    display: flex;
+}
+
+.caption-row {
+    font-family: Yeseva One;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24.95px;
+    text-align: left;
+    color: #E3B873;
+}
+
+.slider-foto {
+    padding-top: 52,68px;
+}
+
+.slider-text {
+    max-width: 442px;
+}
+
+.description {
+    font-family: Nunito Sans;
+    font-weight: 400;
+    line-height: 26.73px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    padding-top: 34px;
+    
+}
+
+.description-loc-time {
+    display: flex;
+    padding-top: 48px;
+}
+
+.description-details-cost {
+    display: flex;
+    padding-top: 34px;
+}
+
+.description-loc, .description-time {
+    width: 189px;
+}
+
+.description-detail, .description-cost {
+    width: 218px;
+}
+
+.caption-txt {
+    color: rgb(255, 255, 255);
+    font-family: Nunito Sans;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.arrow {
+    display: flex;
+    margin-top: 79.64px;
+}
+
+.bottom {
+    display: flex;
+    column-gap: 21px;
+    margin: 21px;
+}
+
+.circle {
+    width: 11px;
+    height: 11px;
+    border: 2px solid grey;
+    border-radius: 50%;
+}

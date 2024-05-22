@@ -62,22 +62,32 @@ nav ul li a:hover {
     padding-top: 45px;
 }
 
+.caption-cont {
+    display: flex;
+    width: 253px;
+}
+
 .caption {
     font-family: 'Yeseva one';
     color: rgb(227, 184, 115);
-    font-size: 29px;
+    font-size: 28px;
     letter-spacing: -0.1em;
     text-align: left;
     text-transform: uppercase;
-    padding-top: 5px;
+    
 }
 
 .caption-line {
     display: flex;
+    margin-left: 3%;
+    height: 3px;
+    width: 92px;
+    background-color: rgb(255, 174, 75);
+    align-self: last baseline;
 }
 
 .caption-row {
-    font-family: Yeseva One;
+    font-family: 'Yeseva One' sans-serif;
     font-size: 18px;
     font-weight: 600;
     line-height: 24.95px;
@@ -94,7 +104,7 @@ nav ul li a:hover {
 }
 
 .description {
-    font-family: Nunito Sans;
+    font-family: 'Nunito Sans' sans-serif;
     font-weight: 400;
     line-height: 26.73px;
     text-align: left;
@@ -105,12 +115,12 @@ nav ul li a:hover {
 
 .description-loc-time {
     display: flex;
-    padding-top: 48px;
+    padding-top: 50px;
 }
 
 .description-details-cost {
     display: flex;
-    padding-top: 34px;
+    padding-top: 40px;
 }
 
 .description-loc, .description-time {
@@ -130,9 +140,13 @@ nav ul li a:hover {
     text-align: left;
 }
 
+.right-pointer {
+    padding-left: 5px;
+}
+
 .arrow {
     display: flex;
-    margin-top: 79.64px;
+    margin-top: 70px;
 }
 
 .bottom {

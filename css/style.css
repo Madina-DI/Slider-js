@@ -5,7 +5,7 @@ body {
 
 }
 @font-face {
-    font-family: 'Yeseva one';
+    font-family: 'Yeseva one' serif;
     src: url('fonst/OFL.YesevaOne') format('txt');
     text-decoration: none;
 }

@@ -1,9 +1,9 @@
 const pointerRight = document.querySelector('.right-pointer');
 const pointerLeft = document.querySelector('.left-pointer');
 const fotoSlider = document.querySelector('.slider-foto');
-const caption = document.querySelector('.caption');
-const captionline = document.querySelector('.caption-line');
-const description = document.querySelector('.description');
+const city = document.querySelector('.description-loc .caption-txt');
+const time = document.querySelector('.description-time .caption-txt');
+const area = document.querySelector('.description-details .caption-txt');
 
 const entities = [
     {
@@ -21,19 +21,34 @@ const entities = [
 ]
 
 const setEntity = (index) => {
-    city.innerText = entities[index].text;
-    time.innerText = entities[index].text;
-    area.innerText = entities[index].text;
-    img.style.backgroundImage = `url(${entities[index].img})`;
+if (index >= 0 && index < entities.length) {
+    city.innerText = entities[index].city;
+    time.innerText = entities[index].time;
+    area.innerText = entities[index].area;
+    fotoSlider.style.backgroundImage = url(${entities[index].img});
 }
+};
 
-let currentIndex = 0
+let currentIndex = 0;
 
+// pointerLeft.addEventListener('click', () => {
+//     setEntity(currentIndex - 1);
+//     currentIndex -= 1;
+//   })
+// pointerRight.addEventListener('click', () => {
+//     setEntity(currentIndex + 1);
+//     currentIndex += 1;
+// })
 pointerLeft.addEventListener('click', () => {
-    setEntity(currentIndex - 1);
-    currentIndex -= 1;
-  })
+    currentIndex = (currentIndex > 0) ? currentIndex - 1 : entities.length - 1;
+    setEntity(currentIndex);
+});
+
 pointerRight.addEventListener('click', () => {
-    setEntity(currentIndex + 1);
-    currentIndex += 1;
-})
+    currentIndex = (currentIndex < entities.length - 1) ? currentIndex + 1 : 0;
+    setEntity(currentIndex);
+});
+
+setEntity(currentIndex);
+
+console.log(setEntity);

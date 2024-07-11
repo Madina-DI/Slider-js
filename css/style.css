@@ -1,6 +1,5 @@
 body {
     background: #131313;
-    /* margin: 109px 134px; */
     margin: 85px 0px;
   display: grid;
   justify-content: center;
@@ -35,20 +34,21 @@ body {
 }
 
 div ul li {
+    font-weight: 500;
+    color: #FFFFFF4D;
+    text-decoration: none;
     text-transform: uppercase;
     font-size: 14px;
 }
 
-div ul li {
-    /* margin-right: 75px; */
-    font-weight: 500;
-    color: #FFFFFF4D;
-    text-decoration: none;
+.menuItem.active {
+    color: #E3B873;
+    border-color: #E3B873;
+    text-decoration: underline;
 }
 
-div ul li:hover {
+.menuItem:hover {
     color: #E3B873;
-    text-decoration: underline;
     border-bottom: 2px;
 }
 
@@ -161,9 +161,19 @@ div ul li:hover {
     margin: 21px;
 }
 
+.circle:hover {
+    background: #000;
+}
+
+.circle.active {
+    background: #000;
+    border-color: #000;
+}
+
 .circle {
     width: 11px;
     height: 11px;
     border: 2px solid grey;
     border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
 }

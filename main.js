@@ -26,9 +26,9 @@ const entities = [
         area:'93 m2',
         img: "url('./images/img_thrd.png')"
     }
-]
+];
 
-let index = 0;
+let currentIndex = 0;
 
 const setEntity = (index) => {
     if (index >= 0 && index < entities.length) {
@@ -39,8 +39,6 @@ const setEntity = (index) => {
         updateCircle(index);
         updateMenu(index);
     }
-
-index += 1;
 };
 
 const updateCircle = (index) => {
@@ -53,31 +51,28 @@ const updateMenu = (index) => {
     menu.forEach((menuItem, i) => {
         menuItem.classList.toggle('active', i === index);
     });
-    menu.forEach((menuItem) => {
-        menuItem.addEventListener("click", function () {
-            const activeItem = fotoSlider.querySelector(".active");
-    });
-    });
 };
 
-let currentIndex = 0;
+// Обработка кликов по стрелкам
+pointerLeft.addEventListener('click', () => {
+    currentIndex = (currentIndex < entities.length - 1) ? currentIndex + 1 : 0;
+    setEntity(currentIndex);
+});
 
 pointerRight.addEventListener('click', () => {
     currentIndex = (currentIndex > 0) ? currentIndex - 1 : entities.length - 1;
     setEntity(currentIndex);
 });
 
-pointerLeft.addEventListener('click', () => {
-    currentIndex = (currentIndex < entities.length - 1) ? currentIndex + 1 : 0;
-    setEntity(currentIndex);
+// Обработка кликов по элементам меню
+menu.forEach((menuItem, i) => {
+    menuItem.addEventListener("click", () => {
+        currentIndex = i;
+        setEntity(currentIndex);
+    });
 });
 
+// Инициализация начального состояния
 setEntity(currentIndex);
-
-
-
-console.log(setEntity);
-
-
 
 

@@ -299,15 +299,15 @@ div ul li {
   }
 
   .slider-foto {
-    width: 100%;
+    width: 95%;
     height: auto;
-    padding-top: 75%;
+    padding-top: 71%;
     margin-top: 16px;
     margin: 10px auto;
   }
 
   .slider-text {
-    width: 100%;
+    width: 95%;
     max-width: 100%;
     padding: 0;
     /* text-align: center; */

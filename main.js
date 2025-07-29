@@ -36,6 +36,9 @@ const setEntity = (index) => {
         time.innerText = entities[index].time;
         area.innerText = entities[index].area;
         fotoSlider.style.backgroundImage = entities[index].img;
+        fotoSlider.style.backgroundSize = "cover";
+        fotoSlider.style.backgroundPosition = "center";
+        fotoSlider.style.backgroundRepeat = "no-repeat";
         updateCircle(index);
         updateMenu(index);
     }
